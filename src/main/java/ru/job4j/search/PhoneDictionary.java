@@ -6,7 +6,7 @@ public class PhoneDictionary {
     private ArrayList<Person> persons = new ArrayList<>();
 
     public void add(Person person) {
-        this.persons.add(person);
+        persons.add(person);
     }
 
     public ArrayList<Person> find(String key) {
