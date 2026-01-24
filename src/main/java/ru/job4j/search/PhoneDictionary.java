@@ -12,14 +12,14 @@ public class PhoneDictionary {
     public ArrayList<Person> find(String key) {
         ArrayList<Person> result = new ArrayList<>();
         for (Person person : persons) {
-            if (Condition(person, key)) {
+            if (condition(person, key)) {
                 result.add(person);
             }
         }
         return result;
     }
 
-    public boolean Condition(Person person, String key) {
+    private boolean condition(Person person, String key) {
         return person.getName().contains(key) || person.getSurname().contains(key) ||
                 person.getPhone().contains(key) || person.getAddress().contains(key);
     }
